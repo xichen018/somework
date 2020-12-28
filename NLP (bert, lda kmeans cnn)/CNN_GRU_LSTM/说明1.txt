@@ -1,0 +1,14 @@
+1、构建语料，采用关键词获取训练语料
+2、对关键词进行分词，训练word2vec 词向量
+3、构建词库，词和id号
+4、划分训练测试语料
+5、输入模型训练，预测
+
+
+build_voc.py   构建词库并保存词和序号之间的关系
+cm06_metric.py  模型评价
+cut_train_w2c.py  分词并训练word2vec
+load_voc.py  将词向量按照id号，进行绑定，后续embedding层会用到
+train_dev_ids.py 划分训练测试集，然后输出id号， 词变成id号
+train_data_id: 训练集，格式为 id号, 标签
+train_dev_id: 测试集，格式为 id号, 标签
